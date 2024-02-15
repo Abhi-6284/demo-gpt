@@ -1,0 +1,37 @@
+{
+    "endpoints": [
+      {
+        "name": "Text to Text",
+        "description": "Use this endpoint to convert text.",
+        "method": "POST",
+        "path": "/api/correct",
+        "parameters": [
+          {"name": "api_key", "type": "string", "description": "Your API key (Required)"},
+          {"name": "text", "type": "string", "description": "Your input text (Required)"}
+        ]
+      },
+      {
+        "name": "Text to Image",
+        "description": "Use this endpoint to generate an image from text.",
+        "method": "POST",
+        "path": "/api/gptimage",
+        "parameters": [
+          {"name": "api_key", "type": "string", "description": "Your API key (Required)"},
+          {"name": "text", "type": "string", "description": "Your input text (Required)"},
+          {"name": "size", "type": "number", "description": "Image size (Required)"}
+        ]
+      },
+      {
+        "name": "Image to Image",
+        "description": "Use this endpoint to read an image.",
+        "method": "POST",
+        "path": "/api/readimage",
+        "parameters": [
+          {"name": "api_key", "type": "string", "description": "Your API key (Required)"},
+          {"name": "text", "type": "string", "description": "Your input text (Required)"},
+          {"name": "size", "type": "number", "description": "Image size (Required)"}
+        ]
+      }
+    ]
+  }
+  
